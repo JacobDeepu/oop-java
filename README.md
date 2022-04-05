@@ -22,3 +22,13 @@
 * Java program to create an abstract class named Shape that contains an empty method named numberOfSides(). Provide three classes named Rectangle, Triangle and Hexagon such that each one of the classes extends the class Shape. Each one of the classes contains only the method numberOfSides() that shows the number of sides in the given geometrical structures. (Exercise to understand polymorphism).
 * Java program to illustrate Interface inheritance.
 * Java program to demonstrate the use of garbage collector.
+
+## LAB Cycle Three
+
+#### Handling different types of files as well as input and output management methods.
+
+* File handling program in Java with reader/writer.
+* Java program that reads a file and displays the file on the screen, with a line number before each line.
+* Java program that displays the number of characters, lines and words in a text file.
+* Java program that read from a file and write to file by handling all file related exceptions.
+* Java program that reads a line of integers, and then displays each integer, and the sum of all the integers.
