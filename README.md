@@ -43,3 +43,14 @@
 * Java program that shows thread synchronization.
 * Java program to create two threads: One for displaying all odd number between 1 and 100 and second thread for displaying all even numbers between 1 and 100.
 * Java program that shows thread priorities.
+
+## LAB Cycle Five
+
+#### Graphics Programming
+
+* Java program that allows the user to draw lines, rectangles and ovals.
+* Java program for handling mouse events.
+* Java program for handling key events using Adapter classes (general).
+* Java Swing program to print a wave form on the output screen.
+* Java program that works as a simple calculator. Arrange Buttons for digits and the + - * % operations properly. Add a text field to display the result. Handle any possible exceptions like divide by zero. Use Java Swing.
+* Java program that simulates a traffic light. The program lets the user select one of three lights: red, yellow, or green. When a radio button is selected, the light is turned on, and only one light can be on at a time. No light is on when the program starts.

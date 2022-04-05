@@ -1,0 +1,103 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class TrafficLight extends JFrame implements ItemListener {
+    JRadioButton jr1;
+    JRadioButton jr2;
+    JRadioButton jr3;
+    JTextField j1 = new JTextField(10);
+    ButtonGroup b = new ButtonGroup();
+    int x = 0, y = 0, z = 0;
+
+    public TrafficLight() {
+        setLayout(new FlowLayout());
+        jr1 = new JRadioButton("Red");
+        jr2 = new JRadioButton("Yellow");
+        jr3 = new JRadioButton("Green");
+        jr1.addItemListener(this);
+        jr2.addItemListener(this);
+        jr3.addItemListener(this);
+        add(jr1);
+        add(jr2);
+        add(jr3);
+        b.add(jr1);
+        b.add(jr2);
+        b.add(jr3);
+        add(j1);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+    }
+
+    public void itemStateChanged(ItemEvent ie) {
+        if (ie.getSource() == jr1) {
+            if (ie.getStateChange() == 1) {
+                j1.setText("Stop");
+                x = 1;
+                repaint();
+            } else {
+                j1.setText("");
+            }
+        }
+        if (ie.getSource() == jr2) {
+            if (ie.getStateChange() == 1) {
+                j1.setText("Get Ready to go!");
+                y = 1;
+                repaint();
+            } else {
+                j1.setText("");
+            }
+        }
+        if (ie.getSource() == jr3) {
+            if (ie.getStateChange() == 1) {
+                j1.setText("Go!!");
+                z = 1;
+                repaint();
+            } else {
+                j1.setText("");
+            }
+        }
+    }
+
+    public void paint(Graphics g) {
+        g.drawOval(120, 80, 60, 60);
+        g.drawOval(120, 150, 60, 60);
+        g.drawOval(120, 230, 60, 60);
+        if (x == 1) {
+            g.setColor(Color.RED);
+            g.fillOval(120, 80, 60, 60);
+            g.setColor(Color.WHITE);
+            g.fillOval(120, 150, 60, 60);
+            g.setColor(Color.WHITE);
+            g.fillOval(120, 230, 60, 60);
+            x = 0;
+        }
+        if (y == 1) {
+            g.setColor(Color.WHITE);
+            g.fillOval(120, 80, 60, 60);
+            g.setColor(Color.YELLOW);
+            g.fillOval(120, 150, 60, 60);
+            g.setColor(Color.WHITE);
+            g.fillOval(120, 230, 60, 60);
+            y = 0;
+        }
+        if (z == 1) {
+            g.setColor(Color.WHITE);
+            g.fillOval(120, 80, 60, 60);
+            g.setColor(Color.WHITE);
+            g.fillOval(120, 150, 60, 60);
+            g.setColor(Color.GREEN);
+            g.fillOval(120, 230, 60, 60);
+            z = 0;
+        }
+    }
+
+    public static void main(String args[]) {
+        JFrame jf = new TrafficLight();
+        jf.setSize(500, 500);
+        jf.setVisible(true);
+    }
+}
