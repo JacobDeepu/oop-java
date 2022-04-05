@@ -32,3 +32,14 @@
 * Java program that displays the number of characters, lines and words in a text file.
 * Java program that read from a file and write to file by handling all file related exceptions.
 * Java program that reads a line of integers, and then displays each integer, and the sum of all the integers.
+
+## LAB Cycle Four
+
+#### Exception handling and multi-threading application.
+
+* Java program that shows the usage of try, catch, throws and finally.
+* Java program that shows how to create a user-defined exception.
+* Java program that implements a multi-threaded program which has three threads. First thread generates a random integer every 1 second. If the value is even, second thread computes the square of the number and prints. If the value is odd the third thread will print the value of cube of the number.
+* Java program that shows thread synchronization.
+* Java program to create two threads: One for displaying all odd number between 1 and 100 and second thread for displaying all even numbers between 1 and 100.
+* Java program that shows thread priorities.
