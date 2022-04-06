@@ -56,3 +56,12 @@
 * Java program that simulates a traffic light. The program lets the user select one of three lights: red, yellow, or green. When a radio button is selected, the light is turned on, and only one light can be on at a time. No light is on when the program starts.
 * Java program to display all records from a table using Java Database Connectivity (JDBC).
 * Java program to accept rollno, name, CGPA of “n” students and store the data to a database using JDBC connectivity. Display the list of students having CGPA greater than 7.
+
+## LAB Cycle Six
+
+#### Standard Searching and Sorting Algorithms using data structures and algorithms.
+
+* Java program for doubly linked list operations.
+* Java program that implements the binary search algorithm.
+* Java program that implements Quick Sort algorithm for sorting a list of names in ascending order.
+* Java program to implement Heap Sort algorithm using array.
