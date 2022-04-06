@@ -46,7 +46,7 @@
 
 ## LAB Cycle Five
 
-#### Graphics Programming
+#### Graphics Programming and JDBC
 
 * Java program that allows the user to draw lines, rectangles and ovals.
 * Java program for handling mouse events.
@@ -54,3 +54,5 @@
 * Java Swing program to print a wave form on the output screen.
 * Java program that works as a simple calculator. Arrange Buttons for digits and the + - * % operations properly. Add a text field to display the result. Handle any possible exceptions like divide by zero. Use Java Swing.
 * Java program that simulates a traffic light. The program lets the user select one of three lights: red, yellow, or green. When a radio button is selected, the light is turned on, and only one light can be on at a time. No light is on when the program starts.
+* Java program to display all records from a table using Java Database Connectivity (JDBC).
+* Java program to accept rollno, name, CGPA of “n” students and store the data to a database using JDBC connectivity. Display the list of students having CGPA greater than 7.
